@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="top">TODOs List</li>
+                <li class="top">Home</li>
+                <li class="top">About</li>
+                <li class="top">Contact Us</li>
+            </ul>
+        </nav>
+        <div class="searchbutton">
+        <div class="search">
+                <input type="search" name="search" id="" placeholder="Search" >
+
+        </div>
+        <div class="button">
+            <input type="button" value="Search">
+        </div>
+    </div>
+    </header>
+    <main>
+        <h1 class="center">TODOs List</h1>
+        <div class="container">
+                <p style="font-size:30px" class="center-left" > Title</p>
+               <input type="text" name="title" id="title" class="center-left-box" style="height:25px">
+               <p  class="center-left">Add an item to the list</p>
+               <p style="font-size:30px" class="center-left" > Description</p>
+               <input type="text" name="Description" id="Description" class="center-left-box" style="height:70px">
+               <br>
+               <input type="button" value="Add to List" class="center-left" id="add" >
+                <input type="button" value="Clear" onclick="clearr()" style="margin-left: 220px;">
+              
+        </div>
+        <div class="container">
+            <h2 class="center-left">Your Items</h2>
+            <table class="center-left">
+                <thead>
+                <tr class="center-left">
+                    <th>Sno</th>
+                    <th>Item Titles</th>
+                    <th>Item Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+                <tbody id="tablebody">
+            <tr>
+                    <td>1</td>
+                    <td>Get Some coffee</td>
+                    <td>You neeed Coffee as you are coder</td>
+                    <td> <input type="button" value="Delete"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
